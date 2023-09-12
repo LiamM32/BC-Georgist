@@ -1,4 +1,4 @@
-# Land Value Tax Revenue Distribution Framework
+# Land Value Tax Distribution Framework
 
 This page describes a system to distibute revenue from a land value tax on all private property in British Columbia to municipal governments, regional districts, and the provincial government. This system results in municipalities with more land value per-capita owing a larger percentage of the revenue they raise. It also results in municipalities with more burdensome zoning owing a larger percentage.
 
