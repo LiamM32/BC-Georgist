@@ -10,7 +10,7 @@ In this system, land value tax is collected by municipalities. Municipalities gi
 
 ## The municipal formula:
 Here is the formula for how much money a municipality owes to the regional district:
-$${R_{oM}} = \frac{p R_t R_n + R_t R_n^2}{2R_n^2+(\frac{R_n}{R_t}+2c_M)p r_{mP} R_t}$$
+$$\displaystyle{R_{oM}} = \frac{p R_t R_n + R_t R_n^2}{2R_n^2+(\frac{R_n}{R_t}+2c_M)p r_{mP} R_t}$$
 
 Here is a description of each variable:
 
@@ -26,14 +26,16 @@ $c_M$ is a value set depending on what share of revenue is desired to be allocat
 
 ## The regional district formula:
 Before determining how much a regional district owes to the province, it is recommended to calculate the value of $R_iR$. This uses the same formula as $R_{oM}$, but with the $p$, $R_t$, and $R_n$ values including the entire regional district.
-$${R_iR} = \frac{p R_t R_n + R_t R_n^2}{R_n^2 + p R_n +2c_M p r_{mP} R_t}$$
+$$\displaystyle{R_iR} = \frac{p R_t R_n + R_t R_n^2}{R_n^2 + p R_n +2c_M p r_{mP} R_t}$$
 
 All uses of $p$, $R_t$, and $R_n$ in this section include the population and land in the entire regional district, excluding conservation land. It should only include land under the control of the regional district or a member municipality.
 
 Regional districts may use one of two formulae to determine how much money they owe to the province, generally whichever has a lower value. Here is the first option:
-$${R_{oRa}} = \frac{p R_iR R_n + R_iR R_t R_n}{R_t R_n + p R_n + 2c_M p r_{mP} R_iR}$$
+$$\displaystyle{R_{oRa}} = \frac{p R_iR R_n + R_iR R_t R_n}{R_t R_n + p R_n + 2c_M p r_{mP} R_iR}$$
+
 This formula can’t be manipulated by the location of borders between municipalities. But it is mathematically possible for it to exceed the revenue that a regional district has raised. They may alternatively use the following formula to reduce what they owe.
-$${R_{oRb}} = \frac{p (\sum{R_{oM}}) R_n + (\sum{R_{oM}}) R_t R_n}{R_t R_n + p R_n + 2c_M p r_{mP} (\sum{R_{oM}})}$$
+$$\displaystyle{R_{oRb}} = \frac{p (\sum{R_{oM}}) R_n + (\sum{R_{oM}}) R_t R_n}{R_t R_n + p R_n + 2c_M p r_{mP} (\sum{R_{oM}})}$$
+
 This latter formula will never result in the regional district owing more money than they have collected. Both of these formulae result in regional districts receiving a larger percentage of collected revenue when their member municipalities have more burdensome zoning.
 
 $\sum{R_{oM}}$ is the sum of all land value tax revenue the regional district receives from member municipalities, plus the $R_{oM}$ value for unincorporated areas. All unincorporated areas in a given regional district should be treated as if they constituted a single municipality.
@@ -42,7 +44,7 @@ $c_R$ is like $c_M$, but for regional districts. It must be set to the same valu
 
 ### Simpler alternative formula:
 If $R_{oRa}$ and $R_{oRb}$ are deemed too complicated, the following formula may alternatively be used in their place. However, this one is technically inferior, as it’s more sensitive to the location of borders between municipalities.
-$${R_{oRb}} = \frac{p (\sum{R_{oM}}) R_n + (\sum{R_{oM}}) R_t R_n}{R_t R_n + p R_n + 2c_M p r_{mP} (\sum{R_{oM}})}$$
+$$\displaystyle{R_{oRb}} = \frac{p (\sum{R_{oM}}) R_n + (\sum{R_{oM}}) R_t R_n}{R_t R_n + p R_n + 2c_M p r_{mP} (\sum{R_{oM}})}$$
 
 ## Guide to c-values:
 Here is a guide to setting the values of $c_M$ and $c_R$. Municipalites should be given a larger share of revenue than under current government budgets, as land value tax reduces the disadvantages of financial decentralisation. Regional districts should be given the smallest share of the revenue.
@@ -57,6 +59,7 @@ The following table assumes that each municipality and regional district has equ
 | 12/13 | 13/12 | 48% | 4% | 48% |
 
 If you want a given percentage to go to municipalities, use the following formula to determine $c_M$, with $P_M$ being the target percentage:
-$$c_M = \frac{P_M}{1-P_M}$$
+$$\displaystyle c_M = \frac{P_M}{1-P_M}$$
+
 The following formula can then be used to determine $c_R$, with $P_R$ being the target percentage for regional districts:
-$$c_R = \frac{P_M+P_R}{1-P_M-P_R}$$
+$$\displaystyle c_R = \frac{P_M+P_R}{1-P_M-P_R}$$

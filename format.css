@@ -1,0 +1,132 @@
+.banner-container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.banner-image {
+	width: 100%;
+	min-width: 600px;
+	height: auto;
+}
+.banner-text {
+	position: absolute;
+	bottom: 5%;
+	left: 33%;
+	transform: translate(-40%, 0%);
+	padding: 1px;
+	font-size: 32px;
+	font-family: Verdana;
+	color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(255, 255, 255, 0.46);
+	mix-blend-mode: hardlight;
+}
+
+.navbar {
+	background-color: darkgreen;
+	overflow: hidden; 
+}
+.navbar a { 
+	float: left;
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Verdana;
+}
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+.dropdown .dropbtn {
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: Verdana;
+	margin: 0;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: darkgreen;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: none;
+	display: block;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align: left;
+	font-size: 16px;
+	font-family: Verdana;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: forestgreen;
+	color: white;
+}
+.dropdown-content a:hover {
+	background-color: forestgreen;
+	color: black;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.link-card {
+	text-decoration: none;
+	display: inline-block;
+	min-width: 400px;
+	max-width: 600px;
+	height: 120px;
+	border-block-start: solid:
+	border-radius: 16px;
+	padding: 8px;
+	background-color: white;
+	text-decoration: none;
+	text-indent: 0;
+	color: black;
+}
+
+.link-card h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.link-card p {
+	font-size: 14px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-block-start: solid;
+	background-color: ivory;
+	padding: 8px;
+	font-size: 13px;
+	text-indent: 3em;
+	color: black;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 1px;
+}
+
+td, th {
+	padding: 2px;
+	border: 1px solid black;
+	text align: center;
+}
+
+p {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	max-width: 900px;
+}
