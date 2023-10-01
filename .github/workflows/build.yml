@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Install Ruby
       uses: actions/setup-ruby@v1
@@ -19,7 +19,9 @@ jobs:
         ruby-version: 3.0 # Choose the Ruby version you need
 
     - name: Install Kramdown
-      run: gem install kramdown
+      run: |
+        gem install kramdown
+        gem install kramdown-parser-gfm
 
     - name: Convert Markdown to HTML
       run: |
