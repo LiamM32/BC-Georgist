@@ -78,14 +78,18 @@
 	display: block;
 }
 
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .link-card {
-	text-decoration: none;
-	display: inline-block;
-	min-width: 400px;
-	max-width: 600px;
+	display: block;
+	flex-direction: column;
+	max-width: min(100%, 600px);
 	height: 120px;
-	border-block-start: solid:
-	border-radius: 16px;
+	border: 1px solid;
+	border-radius: 8px;
 	padding: 8px;
 	background-color: white;
 	text-decoration: none;
