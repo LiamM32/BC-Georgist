@@ -24,4 +24,4 @@ jobs:
     - name: Convert Markdown to HTML
       run: |
         mkdir articles-html
-        ruby convert_markdown.rb
+        ruby cache-articles.rb
