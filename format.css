@@ -10,9 +10,9 @@
 }
 .banner-text {
 	position: absolute;
-	bottom: 5%;
-	left: 33%;
-	transform: translate(-40%, 0%);
+	bottom: calc(2px + 4%);
+	left: calc(30px + 25%);
+	transform: translate(-25%, 0%);
 	padding: 1px;
 	font-size: 32px;
 	font-family: Verdana;
@@ -78,14 +78,18 @@
 	display: block;
 }
 
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .link-card {
-	text-decoration: none;
-	display: inline-block;
-	min-width: 400px;
-	max-width: 600px;
+	display: block;
+	flex-direction: column;
+	max-width: min(100%, 600px);
 	height: 120px;
-	border-block-start: solid:
-	border-radius: 16px;
+	border: 1px solid;
+	border-radius: 8px;
 	padding: 8px;
 	background-color: white;
 	text-decoration: none;
@@ -99,7 +103,7 @@
 }
 
 .link-card p {
-	font-size: 14px;
+	font-size: 96%;
 }
 
 footer {
@@ -126,7 +130,10 @@ td, th {
 }
 
 p {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
 	max-width: 900px;
+}
+
+article {
+	margin-left: 6px;
+	max-width: 1200px;
 }
