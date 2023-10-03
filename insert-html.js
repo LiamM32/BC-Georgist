@@ -4,7 +4,13 @@ function loadHeader() {
 	$('#header-container').load('header.html');
 }
 
+// Function to load and insert footer content
+function loadFooter() {
+	$('#footer-container').load('footer.html');
+}
+
 // Call the loadHeader() function when the document is ready
 $(document).ready(function() {
 loadHeader();
+loadFooter();
 });

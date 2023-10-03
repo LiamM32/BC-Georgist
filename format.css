@@ -2,6 +2,7 @@
 	position: relative;
 	text-align: center;
 	color: white;
+	overflow: hidden;
 }
 .banner-image {
 	width: 100%;
@@ -23,13 +24,14 @@
 
 .navbar {
 	background-color: darkgreen;
-	overflow: hidden; 
+	overflow: hidden;
 }
 .navbar a { 
 	float: left;
 	display: block;
 	color: white;
 	padding: 14px 16px;
+	min-width: min(150px, 50%);
 	text-decoration: none;
 	font-size: 18px;
 	font-family: Verdana;
@@ -80,17 +82,21 @@
 
 .card-container {
 	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
 	flex-wrap: wrap;
 }
 
 .link-card {
-	display: block;
+	display: flex;
 	flex-direction: column;
+	flex: 0 1 596;
 	max-width: min(100%, 600px);
 	height: 120px;
 	border: 1px solid;
 	border-radius: 8px;
-	padding: 8px;
+	margin: 2px;
 	background-color: white;
 	text-decoration: none;
 	text-indent: 0;
@@ -98,7 +104,6 @@
 }
 
 .link-card h3 {
-	margin-top: 0;
 	margin-bottom: 0;
 }
 
@@ -106,12 +111,19 @@
 	font-size: 96%;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
 footer {
-	position: absolute;
 	bottom: 0;
 	width: 100%;
 	border-block-start: solid;
 	background-color: ivory;
+	margin-top: 16px;
 	padding: 8px;
 	font-size: 13px;
 	text-indent: 3em;
@@ -133,7 +145,8 @@ p {
 	max-width: 900px;
 }
 
-article {
-	margin-left: 6px;
+main, article {
+	margin-left: 8px;
 	max-width: 1200px;
+	flex-grow: 1;
 }
